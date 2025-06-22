@@ -62,7 +62,7 @@ body {
 }
 
 .nav .part-2 a:nth-last-child(1) {
-    padding: 16px 28px;
+    padding: 8px 38px;
     position: relative;
     border-radius: 50px;
     border: 1px solid #a4a2a2dd;
@@ -73,6 +73,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+
+.nav .part-2 a:nth-last-child(1) h5 span{
+    font-size: 28px;
+    margin-left: 8px;
 }
 
 .nav .part-2 a:nth-last-child(1)::before {
@@ -94,11 +99,49 @@ body {
 
 .main>h1 {
     font-size: 5.3vw;
-    background-color: red;
+    position: relative;
     width: 50%;
     text-align: center;
     font-weight: 100;
+    color: #000000;
     text-transform: capitalize;
+    z-index: 99;
+}
+
+.main>h1::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjcxIDE5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik0yNjguNzgzIDE4LjU5OUMxMjMuMjUzLTEuNTI5IDIuNDU5IDEzLjM2NyAxLjI2MiAxMy41MjFMLjA1MyA2LjA2MWMxLjIyLS4xNTUgMTIzLjE3Ni0xNS4yMjcgMjcwLjAyIDUuMDg5bC0xLjI5IDcuNDQ5eiIgZmlsbD0iIzAwRUI4RiIvPjwvc3ZnPg==);
+    height: 16px;
+    bottom: -5%;
+    left: 50%;
+    background-size: cover;
+    transform: translate(-50%, 0);
+}
+
+.main #image-1 {
+    height: 460px;
+    width: 340px;
+    position: absolute;
+    left: 6%;
+    top: 20%;
+}
+
+.main #image-2 {
+    height: 280px;
+    width: 320px;
+    position: absolute;
+    right: 26%;
+    top: 22%;
+}
+
+.main #image-3 {
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    right: 7.5%;
+    bottom: 12%;
 }
 
 
